@@ -7,8 +7,7 @@ name: Release
 on:
   push:
     branches:
-      - main
-			
+      - main	
 jobs:
   release:
     runs-on: ubuntu-latest
