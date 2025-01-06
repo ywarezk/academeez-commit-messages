@@ -1,6 +1,6 @@
 {
   "name": "commit-messages-lesson",
-  "version": "1.0.0",
+  "version": "0.0.0-PLACEHOLDER",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,18 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "semantic-release": "^24.2.1"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",      
+      "@semantic-release/github"
+    ]
+  }
 }
